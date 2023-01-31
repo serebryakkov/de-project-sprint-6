@@ -73,18 +73,4 @@ def project6_dag():
     )
     ...
 
-    # task2 = PythonOperator(
-    #     task_id=f'load_groups_to_stg',
-    #     python_callable=load_to_stg,
-    #     op_kwargs={'dest_table': 'groups', 'filename': bucket_files[1]}
-    # )
-    # ...
-
-    # task2 = PythonOperator(
-    #     task_id=f'load_dialogs_to_stg',
-    #     python_callable=load_to_stg,
-    #     op_kwargs={'dest_table': 'dialogs', 'filename': bucket_files[2]}
-    # )
-    # ...
-
 _ = project6_dag()
